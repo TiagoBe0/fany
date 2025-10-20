@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Fanny Edith Andino</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 0;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: white;
+            color: #2c3e50;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            border-bottom: 3px solid #2c3e50;
+        }
+        
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #2c3e50;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            margin: 0 auto 20px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .header .subtitle {
+            font-size: 1.3em;
+            color: #555;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+            font-size: 0.95em;
+            color: #2c3e50;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section-title {
+            color: #2c3e50;
+            font-size: 1.6em;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .objective-box {
+            background: #f8f9fa;
+            border-left: 4px solid #2c3e50;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 0;
+            font-size: 1.05em;
+            color: #2c3e50;
+            font-style: italic;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .skill-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 0;
+            border-left: 3px solid #2c3e50;
+            transition: transform 0.2s;
+        }
+        
+        .skill-item:hover {
+            transform: translateX(5px);
+        }
+        
+        .skill-item strong {
+            color: #2c3e50;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .experience-item {
+            margin-bottom: 25px;
+            padding-left: 25px;
+            border-left: 2px solid #ecf0f1;
+            position: relative;
+        }
+        
+        .experience-item:before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #2c3e50;
+        }
+        
+        .experience-item h3 {
+            color: #2c3e50;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+        
+        .experience-item p {
+            color: #555;
+            margin-bottom: 5px;
+        }
+        
+        .education-item {
+            background: #f8f9fa;
+            padding: 15px;
+            margin-bottom: 12px;
+            border-radius: 0;
+            border-left: 3px solid #2c3e50;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 0;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .highlight {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 0;
+            border-left: 3px solid #2c3e50;
+            margin-top: 15px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="fany.png"  class="profile-photo">
+            
+            <div class="contact-info">
+                <div class="contact-item">📞 2613354925</div>
+                <div class="contact-item">✉️ fannyandino40@gmail.com</div>
+                <div class="contact-item">📍 Las Heras, Mendoza</div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">Perfil Profesional</h2>
+                <div class="objective-box">
+                    Profesional responsable y comprometida con más de 10 años de experiencia en servicios de limpieza, mantenimiento y cuidado de espacios. Orientada a la excelencia en cada tarea, con capacidad para trabajar de forma autónoma o en equipo. Certificada como Cuidadora Infantil, lo que refuerza mis habilidades de responsabilidad, organización y atención al detalle.
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Competencias Destacadas</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <strong>✓ Limpieza Profesional</strong>
+                        Experiencia en limpieza residencial, comercial e institucional
+                    </div>
+                    <div class="skill-item">
+                        <strong>✓ Mantenimiento de Espacios</strong>
+                        Cuidado y conservación de instalaciones y equipamiento
+                    </div>
+                    <div class="skill-item">
+                        <strong>✓ Organización</strong>
+                        Gestión eficiente del tiempo y planificación de tareas
+                    </div>
+                    <div class="skill-item">
+                        <strong>✓ Atención al Detalle</strong>
+                        Minuciosidad y alto estándar de calidad en el trabajo
+                    </div>
+                    <div class="skill-item">
+                        <strong>✓ Responsabilidad</strong>
+                        Compromiso, puntualidad y confiabilidad
+                    </div>
+                    <div class="skill-item">
+                        <strong>✓ Adaptabilidad</strong>
+                        Capacidad para trabajar en diferentes entornos y horarios
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Experiencia Laboral</h2>
+                
+                <div class="experience-item">
+                    <h3>Asistencia Total - Personal de Limpieza</h3>
+                    <p>• Mantenimiento y limpieza integral de instalaciones</p>
+                    <p>• Aplicación de protocolos de higiene y seguridad</p>
+                    <p>• Manejo de productos y equipamiento profesional de limpieza</p>
+                </div>
+                
+                <div class="experience-item">
+                    <h3>Dalvian - Servicio Doméstico</h3>
+                    <p>• Limpieza profunda de espacios residenciales</p>
+                    <p>• Organización y mantenimiento del hogar</p>
+                    <p>• Atención personalizada según necesidades del cliente</p>
+                </div>
+                
+                <div class="experience-item">
+                    <h3>Eco-Clean - Personal de Mantenimiento</h3>
+                    <p>• Limpieza y mantenimiento de áreas comunes</p>
+                    <p>• Gestión de residuos y reciclaje</p>
+                    <p>• Trabajo en equipo y coordinación de tareas</p>
+                </div>
+                
+                <div class="experience-item">
+                    <h3>Experiencia Adicional</h3>
+                    <p><strong>Padme:</strong> Administración y encargada de personal</p>
+                    <p><strong>Arugula:</strong> Elaboración de comida vegetariana y atención al público</p>
+                    <p><strong>Greba Confitería:</strong> Atención y elaboración</p>
+                    <p><strong>Panadería San Miguel:</strong> Atención al cliente</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Formación y Certificaciones</h2>
+                
+                <div class="education-item">
+                    <strong>🎓 Cuidador Infantil - IPCL 3185 ESAPA</strong><br>
+                    Resolución N-0092/17 de D.E.TYT | 150 horas | Finalizado: Julio 2020<br>
+                    <em>Certificación que complementa habilidades de responsabilidad, organización y cuidado</em>
+                </div>
+                
+                <div class="education-item">
+                    <strong>📚 Seminario de Manualidades</strong><br>
+                    Las Heras, Mendoza<br>
+                    <em>Habilidades en organización y creatividad aplicables al trabajo</em>
+                </div>
+                
+                <div class="education-item">
+                    <strong>🎓 Educación Secundaria Completa</strong><br>
+                    Esc. Molinero Tejeda
+                </div>
+                
+                <div class="education-item">
+                    <strong>🎓 Educación Primaria Completa</strong><br>
+                    Esc. Dellepiane
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Información Adicional</h2>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">DNI:</span> 26.027.241
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">CUIL:</span> 27-26027241-7
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Edad:</span> 48 años
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Idioma:</span> Inglés Básico
+                    </div>
+                </div>
+                
+                <div class="highlight">
+                    <strong>🚗 Licencia de Conducir Nacional</strong><br>
+                    Categorías: A1.3 y B2 - Vencimiento: Junio 2034<br>
+                    <em>Movilidad propia disponible para traslados laborales</em>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
